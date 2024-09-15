@@ -1,7 +1,5 @@
 # 1. Image classification (basic): CIFAR10
 
-Reference: https://colab.research.google.com/github/pvateekul/2110531_DSDE_2024s1/blob/main/code/Week04_DL/1_Image_classification_CIFAR10_CNN.ipynb
-
 Aim to classify images into 10 classes of cifar10 dataset using pytorch.
 
 ```Python
@@ -12,7 +10,7 @@ device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 print(device)
 ```
 
-Will use GPU if available, otherwise CPU
+Will use the GPU if it's available; otherwise, It will use the CPU.
 
 <br />
 
@@ -368,6 +366,7 @@ for i in range(5):
 Visualizes the predictions of the trained CNN model on a batch of test images. \
 ![img.png](images/1-6.png)
 
+---
 
 ### **Summary Steps**
 1. Check GPU Availability 
@@ -380,3 +379,5 @@ Visualizes the predictions of the trained CNN model on a batch of test images. \
 8. Training the Model
 9. Testing the Model
 10. Visualizing Predictions
+
+Reference: https://colab.research.google.com/github/pvateekul/2110531_DSDE_2024s1/blob/main/code/Week04_DL/1_Image_classification_CIFAR10_CNN.ipynb
