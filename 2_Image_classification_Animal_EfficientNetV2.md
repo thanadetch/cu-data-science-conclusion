@@ -130,7 +130,7 @@ PlotRandomFromEachClass(trainset, 3, labels=trainset.label_image)
 The `PlotRandomFromEachClass` function creates a visual grid displaying random samples of images from each class in a dataset.
 
 By plotting 3 random images per class, organized in a grid where each column represents a class and each row represents a different image.
-![img.png](images/2-1.png)
+![img.png](images/2/2-1.png)
 
 <br />
 
@@ -158,7 +158,7 @@ imshow(torchvision.utils.make_grid(images, nrow = nrow))
 ```
 Defines an `imshow` function to visualize images and then retrieves a batch of images and labels from the training data loader and displays the images in a grid format.
 
-![img.png](images/2-2.png)
+![img.png](images/2/2-2.png)
 
 <br />
 
@@ -337,7 +337,7 @@ plt.show()
 ```
 Generates a figure with three vertically stacked subplots to visualize the training and validation performance.
 
-![img.png](images/2-3.png)
+![img.png](images/2/2-3.png)
 
 <br />
 
@@ -380,8 +380,8 @@ with torch.no_grad():
 
 The model is tested on unseen data, where predictions are compared to the true labels, and the average test loss is calculated. A classification report is generated to show how well the model predicts each class, and a confusion matrix is displayed to visualize correct and incorrect predictions.
 
-![img.png](images/2-4.png) \
-![img.png](images/2-5.png)
+![img.png](images/2/2-4.png) \
+![img.png](images/2/2-5.png)
 
 <br />
 
@@ -426,7 +426,7 @@ By following the steps below:
 - Visualize Images
 - Display Predictions
 
-![img.png](images/2-6.png)
+![img.png](images/2/2-6.png)
 
 ---
 
