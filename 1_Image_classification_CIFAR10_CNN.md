@@ -368,16 +368,24 @@ Visualizes the predictions of the trained CNN model on a batch of test images. \
 
 ---
 
-### **Summary Steps**
-1. Check GPU Availability 
-2. Data Transformations
-3. Load CIFAR10 Dataset
-4. Visualizing Random Images from Classes
-5. Visualizing a Batch of Training Images
-6. Define CNN Model
-7. Model Summary
-8. Training the Model
-9. Testing the Model
-10. Visualizing Predictions
+### Steps Overview
+1. Data Transformations
+2. Load CIFAR10 Dataset
+3. Visualizing Random Images from Classes
+4. Visualizing a Batch of Training Images
+5. Define CNN Model
+6. Model Summary
+7. Training the Model
+8. Testing the Model
+9. Visualizing Predictions
 
-Reference: https://colab.research.google.com/github/pvateekul/2110531_DSDE_2024s1/blob/main/code/Week04_DL/1_Image_classification_CIFAR10_CNN.ipynb
+### Intensive Summary
+The CNN model for CIFAR-10 classification was built with multiple convolutional layers for feature extraction, followed by pooling and fully connected layers for classification. The model was trained using Cross-Entropy Loss and optimized with SGD and momentum. Training was conducted over 25-50 epochs, with optional data augmentation to improve performance
+
+### Results
+The model achieved a test accuracy between 70% and 85%, with a consistent decrease in loss over time. Predictions were confident, with probabilities often exceeding 85% for the correct classifications.
+
+<br />
+
+Reference: \
+https://colab.research.google.com/github/pvateekul/2110531_DSDE_2024s1/blob/main/code/Week04_DL/1_Image_classification_CIFAR10_CNN.ipynb

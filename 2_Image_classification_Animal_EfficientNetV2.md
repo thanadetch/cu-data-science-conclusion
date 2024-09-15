@@ -430,7 +430,7 @@ By following the steps below:
 
 ---
 
-### **Summary Steps**
+### **Steps Overview**
 1. Download and unzip the custom animal dataset.
 2. Set up data pipelines for training and evaluating an image classification model.
 3. Create dataset instances for training, validation, and testing.
@@ -440,5 +440,13 @@ By following the steps below:
 7. Visualize training and validation performance.
 8. Test the model on unseen data and visualize predictions for a sample of images.
 
-References: \
+### **Intensive Summary**
+This project aims to classify images from a 10-class animal dataset using EfficientNetV2, leveraging the power of transfer learning. By downloading and pre-processing the dataset, the model is fine-tuned using a Cross-Entropy Loss function and optimized via Adam. The model's architecture, EfficientNetV2, is known for its efficient scaling and accuracy, making it suitable for tasks requiring high performance with fewer resources.
+
+### **Results**
+EfficientNetV2 proved to be a powerful model for image classification tasks, with strong performance on the 10-class animal dataset. For future improvements, hyperparameter tuning (like batch size or learning rate) and ensembling with other models can be explored to further enhance results.
+
+<br />
+
+References:\
 https://colab.research.google.com/github/pvateekul/2110531_DSDE_2024s1/blob/main/code/Week04_DL/2_Image_classification_Animal_EfficientNetV2.ipynb
