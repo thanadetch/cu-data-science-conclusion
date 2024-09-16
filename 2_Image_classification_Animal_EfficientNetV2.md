@@ -424,7 +424,7 @@ By following the steps below:
 3. Create dataset instances for training, validation, and testing.
 4. Visualize random samples of images from each class in the training dataset.
 5. Define an EfficientNet-V2-S model pre-trained on ImageNet for a custom 10-class classification task.
-6. Train the Model and Evaluate its Performance on the Validation Set:.
+6. Train the Model and Evaluate its Performance on the Validation Set.
 7. Visualize training and validation performance.
 8. Test the model on unseen data and visualize predictions for a sample of images.
 

@@ -8,7 +8,7 @@ employed for the trial. The code is modified form https://pytorch.org/tutorials/
 
 <br />
 
-**1. Model Setup**
+### 1. Model Setup
 ```python
 from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
 
@@ -27,7 +27,7 @@ Sets up a Faster R-CNN model with a MobileNet V3 backbone, pretrained on the COC
 
 <br />
 
-**2. Data Preparation and Inspection**
+### 2. Data Preparation and Inspection
 ```python
 import albumentations as A
 from albumentations.pytorch import ToTensorV2
@@ -180,7 +180,7 @@ Visualizes the training images with their bounding boxes and labels.
 
 <br />
 
-**3. Training and Validation**
+### 3. Training and Validation
 
 ```python
 # CAUTION: TRAIN 2 HOUR!! 30 epochs
@@ -313,7 +313,7 @@ Trains the Faster R-CNN model on the Pascal VOC dataset for a specified number o
 
 <br />
 
-**4. Testing (evaluation)**
+### 4. Testing (evaluation)
 
 ```python
 from tqdm.notebook import tqdm
@@ -364,7 +364,7 @@ Tests the Faster R-CNN model on the validation set of the Pascal VOC dataset.
 
 <br />
 
-**5. Performance on training set**
+### 5. Performance on training set
 
 ```python
 def imshow_test(imgs, preds, labels, ncol):
@@ -448,7 +448,7 @@ Visualizes the predictions of the Faster R-CNN model on the training set.
 
 <br />
 
-**6. Performance on validation set**
+### 6. Performance on validation set
 
 ```python
 dataiter = iter(valloader)
@@ -467,7 +467,7 @@ Visualizes the predictions of the Faster R-CNN model on the validation set.
 
 <br />
 
-**7. Performance on test set**
+### 7. Performance on test set
 
 ```python
 dataiter = iter(testloader)
@@ -499,7 +499,7 @@ Visualizes the predictions of the Faster R-CNN model on the test set.
 
 <br />
 
-**8. Performance on testing set with finished weight**
+### 8. Performance on testing set with finished weight
 
 ```python
 net.load_state_dict(torch.load('./VOCDetection-FasterRCNN_MobileNet_V3_master.pth', map_location=torch.device('cpu')))

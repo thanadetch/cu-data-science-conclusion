@@ -6,7 +6,7 @@ Detection Dataset (http://host.robots.ox.ac.uk/pascal/VOC/) and
 YOLOv8 (https://docs.ultralytics.com/datasets/detect/voc/) are employed for the trial. The code is modified
 form https://colab.research.google.com/github/ultralytics/ultralytics/blob/main/examples/tutorial.ipynb.
 
-**1. Load the pre-trained YOLOv8 model.**
+### 1. Load the pre-trained YOLOv8 model.
 
 ```python
 # Run inference on an image with YOLOv8n
@@ -16,7 +16,7 @@ form https://colab.research.google.com/github/ultralytics/ultralytics/blob/main/
 
 Download the pre-trained YOLOv8n model, run object detection on the given image.
 
-**2. Perform object detection on an initial image.**
+### 2. Perform object detection on an initial image.
 
 ```python
 # Imports PIL module
@@ -35,7 +35,7 @@ Run YOLOv8n object detection on an image, and then display the detection results
 
 <br />
 
-**3. Train the model and validate the model's performance.**
+### 3. Train the model and validate the model's performance.
 
 ```python
 !yolo train data=VOC.yaml model=yolov8n.pt epochs=3 imgsz=640 device=0
@@ -129,7 +129,7 @@ Results saved to runs/detect/val2
 
 <br />
 
-**4. Use the trained model to predict objects in a test image.**
+### 4. Use the trained model to predict objects in a test image.
 
 ```python
 from ultralytics import YOLO
