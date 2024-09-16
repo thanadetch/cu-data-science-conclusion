@@ -549,3 +549,8 @@ The model was fine-tuned to detect 20 classes for the Pascal VOC dataset.
 The model is customized for Pascal VOC object detection, using pretrained COCO weights for improved training efficiency.
 It is ready for further training or inference, with support for CUDA acceleration. The data processing pipeline ensures
 that the model performs well on object detection tasks with consistent and efficient results.
+
+<br />
+
+References:\
+https://colab.research.google.com/github/pvateekul/2110531_DSDE_2024s1/blob/main/code/Week04_DL/3_1_Object_detection_VOCDetection_FasterRCNN_MobileNet_V3.ipynb
