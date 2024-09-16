@@ -4,6 +4,7 @@ Aim to classify images into 10 classes of cifar10 dataset using pytorch.
 
 <br />
 
+### 1. Data Transformations
 ```python
 transform = transforms.Compose( # transform is from torchvision (only for image)
     [transforms.ToTensor(), # image to tensor --> divide by 255
@@ -13,9 +14,9 @@ batch_size = 32
 ```
 Convert image to tensor and resize image to 32x32 px
 
-
 <br />
 
+### 2. Load CIFAR10 Dataset
 ```python
 trainvalset = torchvision.datasets.CIFAR10(root='./data', train=True, download=True, transform=transform)
 trainset, valset = torch.utils.data.random_split(trainvalset, [40000, 10000])
@@ -32,6 +33,7 @@ Load CIFAR10 dataset and split into train, validation and test set.
 
 <br />
 
+### 3. Visualizing Random Images from Classes
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -60,6 +62,7 @@ Randomly selecting and displaying 3 images from each class in a grid layout. It 
 
 <br />
 
+### 4. Visualizing a Batch of Training Images
 ```python
 # functions to show an image
 def imshow(img):
@@ -97,6 +100,7 @@ Prints the labels of the images in the batch. \
 
 <br />
 
+### 5. Define CNN Model
 ```python
 import torch.nn as nn
 import torch.nn.functional as F
@@ -173,6 +177,7 @@ Estimated Total Size (MB): 2.31
 
 <br />
 
+### 7. Training the Model
 ```python
 import torch.optim as optim
 
@@ -279,6 +284,7 @@ Trains a CNN model on the CIFAR-10 dataset over 20 epochs, calculating and displ
 
 <br />
 
+### 8. Testing the Model
 ```python
 from sklearn.metrics import confusion_matrix,ConfusionMatrixDisplay
 
@@ -322,6 +328,7 @@ Performs evaluation of the trained CNN model on the test dataset. It calculates 
 
 <br />
 
+### 9. Visualizing Predictions
 ```python
 plt.figure(figsize=(20,5))
 dataiter = iter(testloader)
