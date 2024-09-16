@@ -6,8 +6,6 @@ Detection Dataset (http://host.robots.ox.ac.uk/pascal/VOC/) and
 YOLOv8 (https://docs.ultralytics.com/datasets/detect/voc/) are employed for the trial. The code is modified
 form https://colab.research.google.com/github/ultralytics/ultralytics/blob/main/examples/tutorial.ipynb.
 
-<br />
-
 ### 1. Download the Pascal VOC dataset.
 
 ```python
