@@ -10,18 +10,6 @@ Download the custom animal dataset and unzip it.
 <br />
 
 ```python
-device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-
-# Assuming that we are on a CUDA machine, this should print a CUDA device-> cuda:{device's number}
-
-print(device)
-```
-
-Will use the GPU if it's available; otherwise, It will use the CPU.
-
-<br />
-
-```python
 import albumentations as A
 from albumentations.pytorch import ToTensorV2
 

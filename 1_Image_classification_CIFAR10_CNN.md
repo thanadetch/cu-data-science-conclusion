@@ -2,16 +2,6 @@
 
 Aim to classify images into 10 classes of cifar10 dataset using pytorch.
 
-```Python
-device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-
-# Assuming that we are on a CUDA machine, this should print a CUDA device-> cuda:{device's number}
-
-print(device)
-```
-
-Will use the GPU if it's available; otherwise, It will use the CPU.
-
 <br />
 
 ```python
