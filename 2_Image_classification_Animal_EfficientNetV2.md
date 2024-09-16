@@ -1,5 +1,7 @@
 # 2. Image classification (advanced): Animal
+We aim to classify images into 10 classes of custom animal dataset using EfficientNetV2s
 
+### 1. Download and unzip the custom animal dataset.
 ```python
 !wget https://github.com/pvateekul/2110531_DSDE_2023s1/raw/main/code/Week05_Intro_Deep_Learning/data/Dataset_animal2.zip
 !unzip -q -o 'Dataset_animal2.zip'
@@ -9,6 +11,7 @@ Download the custom animal dataset and unzip it.
 
 <br />
 
+### 2. Set up data pipelines for training and evaluating an image classification model.
 ```python
 import albumentations as A
 from albumentations.pytorch import ToTensorV2
@@ -40,6 +43,7 @@ Sets up the data pipelines for training and evaluating an image classification m
 
 <br />
 
+### 3. Create dataset instances for training, validation, and testing.
 ```python
 class AnimalDataset(Dataset):
 
@@ -164,6 +168,7 @@ Displaying labels corresponding to a grid of images, especially after visualizin
 
 <br />
 
+### 5. Define an EfficientNet-V2-S model pre-trained on ImageNet for a custom 10-class classification task.
 ```python
 import torch.nn as nn
 import torch.nn.functional as F
@@ -183,6 +188,7 @@ Downloading: "https://download.pytorch.org/models/efficientnet_v2_s-dd5fe13b.pth
 
 <br />
 
+### 6. Train the Model and Evaluate its Performance on the Validation Set.
 ```python
 import torch.optim as optim
 from torch.optim import lr_scheduler
@@ -304,6 +310,7 @@ Training loop for a neural network using PyTorch, which includes:
 
 <br />
 
+### 7. Visualize training and validation performance.
 ```python
 fig, axs = plt.subplots(3, figsize= (6,10))
 # loss
@@ -373,6 +380,7 @@ The model is tested on unseen data, where predictions are compared to the true l
 
 <br />
 
+### 8. Test the model on unseen data and visualize predictions for a sample of images.
 ```python
 plt.figure(figsize=(20,5))
 dataiter = iter(testloader)

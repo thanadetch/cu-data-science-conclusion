@@ -2,8 +2,6 @@
 
 Aim to classify images into 10 classes of cifar10 dataset using pytorch.
 
-<br />
-
 ### 1. Data Transformations
 ```python
 transform = transforms.Compose( # transform is from torchvision (only for image)

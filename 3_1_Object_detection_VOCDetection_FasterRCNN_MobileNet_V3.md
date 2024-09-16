@@ -6,8 +6,6 @@ Detection Dataset (http://host.robots.ox.ac.uk/pascal/VOC/) and Faster RCNN with
 backbone (https://towardsdatascience.com/faster-r-cnn-for-object-detection-a-technical-summary-474c5b857b46) are
 employed for the trial. The code is modified form https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html.
 
-<br />
-
 ### 1. Model Setup
 ```python
 from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
