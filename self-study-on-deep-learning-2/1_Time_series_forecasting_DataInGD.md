@@ -1,5 +1,4 @@
 ## How to use PyTorch LSTMs/GRUs for time series regression
-We aim to forcast stock price value by using LSTM with Pytorch.
 
 ### 1. **Describing Models, Hardware Requirements, Data Statistics, Learning Curves, Metrics, and Finetuning Techniques**
 
