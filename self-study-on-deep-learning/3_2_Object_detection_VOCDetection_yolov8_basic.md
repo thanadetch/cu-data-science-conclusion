@@ -31,7 +31,7 @@ im
 
 Run YOLOv8n object detection on an image, and then display the detection results.
 
-![img.png](../images/3_2/3_2-1.png)
+![img.png](../images/self-study-on-deep-learning/3_2/3_2-1.png)
 
 <br />
 
@@ -43,9 +43,9 @@ Run YOLOv8n object detection on an image, and then display the detection results
 
 Trains YOLOv8n on the Pascal VOC dataset for 3 epochs, using a 640x640 image size and GPU acceleration.
 
-![img.png](../images/3_2/3_2-2.png)
-![img.png](../images/3_2/3_2-3.png)
-![img.png](../images/3_2/3_2-4.png)
+![img.png](../images/self-study-on-deep-learning/3_2/3_2-2.png)
+![img.png](../images/self-study-on-deep-learning/3_2/3_2-3.png)
+![img.png](../images/self-study-on-deep-learning/3_2/3_2-4.png)
 
 <br />
 
@@ -168,7 +168,7 @@ plt.imshow(img)
 
 Displays the detection results on the test image.
 
-![img.png](../images/3_2/3_2-5.png)
+![img.png](../images/self-study-on-deep-learning/3_2/3_2-5.png)
 
 ```python
 x0,y0,x1,y1 = results[0].boxes.xyxy[0].cpu().numpy().astype(int)
@@ -186,7 +186,7 @@ for i in range(len(results[0].boxes)):
 Prediction results, extracts the bounding boxes, class names, and confidence scores, and then visualizes them on the
 image using OpenCV.
 
-![img.png](../images/3_2/3_2-6.png)
+![img.png](../images/self-study-on-deep-learning/3_2/3_2-6.png)
 
 ---
 

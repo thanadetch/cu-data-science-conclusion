@@ -223,7 +223,7 @@ Image.open("/content/runs/detect/train/confusion_matrix.png")
 This is the file path to the confusion matrix image. The confusion matrix visually represents the performance of the
 model, showing true positives, false positives, and false negatives for each class.
 
-![img.png](../images/3_3/3_3-1.png)
+![img.png](../images/self-study-on-deep-learning/3_3/3_3-1.png)
 
 <br />
 
@@ -234,7 +234,7 @@ Image.open("/content/runs/detect/train/results.png")
 A set of training and validation metrics visualized as line graphs for a YOLOv8 model. These metrics help track the
 performance of the model during and after training across 3 epochs.
 
-![img.png](../images/3_3/3_3-2.png)
+![img.png](../images/self-study-on-deep-learning/3_3/3_3-2.png)
 
 <br />
 
@@ -245,7 +245,7 @@ Image.open("/content/runs/detect/train/val_batch1_pred.jpg")
 Displays the results of object detection using a trained YOLO model. Each image in the grid contains bounding boxes
 around detected objects, along with labels and confidence scores
 
-![img.png](../images/3_3/3_3-3.png)
+![img.png](../images/self-study-on-deep-learning/3_3/3_3-3.png)
 
 ---
 

@@ -25,7 +25,7 @@ img
 
 Show the input image
 
-![img.png](../images/4/4-1.png)
+![img.png](../images/self-study-on-deep-learning/4/4-1.png)
 
 ```python
 # input mask
@@ -37,7 +37,7 @@ Show the input mask which is typically an image where each pixel value correspon
 label. The mask serves as the ground truth for the segmentation model, telling it which pixels belong to which objects
 in the scene.
 
-![img.png](../images/4/4-2.png)
+![img.png](../images/self-study-on-deep-learning/4/4-2.png)
 
 ```python
 # load colormap from label_colors.txt
@@ -310,7 +310,7 @@ plt.legend()
 The graph you've shown is a training vs. validation loss plot, typically used to monitor the model’s performance over
 training epochs
 
-![img.png](../images/4/4-3.png)
+![img.png](../images/self-study-on-deep-learning/4/4-3.png)
 
 <br />
 
@@ -324,7 +324,7 @@ plt.legend()
 
 The graph shows the training and validation accuracy plotted against the number of epochs
 
-![img.png](../images/4/4-4.png)
+![img.png](../images/self-study-on-deep-learning/4/4-4.png)
 
 <br />
 
@@ -462,7 +462,7 @@ imshow(image)
 
 The `imshow` function is used to display the image from the test set.
 
-![img.png](../images/4/4-5.png)
+![img.png](../images/self-study-on-deep-learning/4/4-5.png)
 
 <br />
 
@@ -486,7 +486,7 @@ plt.tight_layout()
 Visualization where each subplot corresponds to a specific class, showing the regions in the image that the model has
 identified for that class. This can help you evaluate how well the model is performing for each class.
 
-![img.png](../images/4/4-6.png)
+![img.png](../images/self-study-on-deep-learning/4/4-6.png)
 
 
 <br />
@@ -503,7 +503,7 @@ The model's output shows different regions segmented based on the most likely cl
 represent different classes such as road, sky, vegetation, pedestrians, etc. The segmentation appears smooth, with
 distinct regions for the road, objects, and background.
 
-![img.png](../images/4/4-7.png)
+![img.png](../images/self-study-on-deep-learning/4/4-7.png)
 
 
 <br />
@@ -520,7 +520,7 @@ plt.show()
 
 Side-by-side visualization allows you to easily compare the predicted segmentation with the original image.
 
-![img.png](../images/4/4-8.png)
+![img.png](../images/self-study-on-deep-learning/4/4-8.png)
 
 ---
 

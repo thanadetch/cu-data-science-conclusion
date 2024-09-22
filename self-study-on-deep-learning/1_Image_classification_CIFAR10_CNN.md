@@ -56,7 +56,7 @@ PlotRandomFromEachClass(trainset.dataset.data, trainset.dataset.targets, 3, labe
 ```
 Randomly selecting and displaying 3 images from each class in a grid layout. It uses `numpy` to handle data and `matplotlib` to plot the images.
 
-![img.png](../images/1/1-1.png)
+![img.png](../images/self-study-on-deep-learning/1/1-1.png)
 
 <br />
 
@@ -84,7 +84,7 @@ Provides a visual preview of a batch of training images arranged in a grid, maki
 `torchvision.utils.make_grid`: Arranges images into a grid.\
 `imshow`: Displays the grid of images with 8 images per row.
 
-![img.png](../images/1/1-2.png)
+![img.png](../images/self-study-on-deep-learning/1/1-2.png)
 
 <br />
 
@@ -94,7 +94,7 @@ for i in range(batch_size//nrow+1 if batch_size % nrow else batch_size//nrow):
   print(' '.join(f'{labels[i*nrow+j]:<3}' for j in range(min(batch_size - i*nrow, nrow))))
 ```
 Prints the labels of the images in the batch. \
-![img.png](../images/1/1-3.png)
+![img.png](../images/self-study-on-deep-learning/1/1-3.png)
 
 <br />
 
@@ -321,8 +321,8 @@ with torch.no_grad():
 ```
 Performs evaluation of the trained CNN model on the test dataset. It calculates the average test loss, generates a detailed classification report showing metrics like precision, recall, and F1-score for each class, and computes the confusion matrix to visualize the model's performance across different classes.
 
-![img.png](../images/1/1-4.png) \
-![img.png](../images/1/1-5.png)
+![img.png](../images/self-study-on-deep-learning/1/1-4.png) \
+![img.png](../images/self-study-on-deep-learning/1/1-5.png)
 
 <br />
 
@@ -359,7 +359,7 @@ for i in range(5):
     plt.title(f"{label} ({prob*100:.2f}%)")
 ```
 Visualizes the predictions of the trained CNN model on a batch of test images. \
-![img.png](../images/1/1-6.png)
+![img.png](../images/self-study-on-deep-learning/1/1-6.png)
 
 ---
 

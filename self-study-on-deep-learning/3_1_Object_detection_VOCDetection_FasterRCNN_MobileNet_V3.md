@@ -174,7 +174,7 @@ imshow(images[:13], labels[:13], ncol)
 ```
 Visualizes the training images with their bounding boxes and labels.
 
-![img.png](../images/3_1/3_1-1.png)
+![img.png](../images/self-study-on-deep-learning/3_1/3_1-1.png)
 
 <br />
 
@@ -442,7 +442,7 @@ imshow_test(images[:13], preds[:13], labels[:13], ncol)
 ```
 Visualizes the predictions of the Faster R-CNN model on the training set.
 
-![img.png](../images/3_1/3_1-2.png)
+![img.png](../images/self-study-on-deep-learning/3_1/3_1-2.png)
 
 <br />
 
@@ -461,7 +461,7 @@ imshow_test(images[:9], preds[:9], labels[:9], ncol)
 ```
 Visualizes the predictions of the Faster R-CNN model on the validation set.
 
-![img.png](../images/3_1/3_1-3.png)
+![img.png](../images/self-study-on-deep-learning/3_1/3_1-3.png)
 
 <br />
 
@@ -493,7 +493,7 @@ imshow_test(images[:9], preds[:9], labels[:9], ncol)
 ```
 Visualizes the predictions of the Faster R-CNN model on the test set.
 
-![img.png](../images/3_1/3_1-4.png)
+![img.png](../images/self-study-on-deep-learning/3_1/3_1-4.png)
 
 <br />
 
@@ -520,7 +520,7 @@ imshow_test(images[:9], preds[:9], labels[:9], ncol)
 ```
 Retrieves a batch of test images and labels from the test data loader and runs the model in evaluation mode to generate predictions. After that, it displays the first 9 images from the batch, along with their predicted and actual labels.
 
-![img.png](../images/3_1/3_1-5.png)
+![img.png](../images/self-study-on-deep-learning/3_1/3_1-5.png)
 
 
 ---
